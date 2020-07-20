@@ -55,10 +55,10 @@ function writeStock(x){
 function feedDog(){
   dog.addImage(happyDog);
   foodObj.updateFoodStock(foodObj.getFoodStock()-1);
-  database.ref("/").update{
+  database.ref("/").update({
     Food:foodObj.getFoodStock(),
     FeedTime:hour()
-  }
+  })
 }
 function addFoods(){
   foodS++;
