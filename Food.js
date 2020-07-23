@@ -4,13 +4,18 @@ class Food{
         this.FoodStock=foodStock;
     }
     getFoodStock(){
-
+        return this.foodStock
     }
-    updateFoodStock(){
-
+    updateFoodStock(foodStock){
+        this.foodStock=foodStock
+    }
+    getFedTime(lastFed){
+        this.lastFed=lastFed;
     }
     deductFood(){
-
+        if(this.foodStock>0){
+            this.foodStock=this.foodStock-1
+        }
     }
     display(){
         var x=80,y=100;

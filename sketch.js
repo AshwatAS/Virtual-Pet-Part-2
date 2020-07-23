@@ -39,7 +39,7 @@ function draw() {
   if(lastFed>=12){
     text("Last Feed: "+ lastFed%12,350,30);
   }else if(lastFed==0){
-    text("Last Feeed:12 AM",350,30);
+    text("Last Feed:12 AM",350,30);
   }else{
     text("Last Feed : "+lastFed+"AM",350,30);
   }
